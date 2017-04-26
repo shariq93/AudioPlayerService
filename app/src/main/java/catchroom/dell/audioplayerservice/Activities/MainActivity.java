@@ -1,4 +1,4 @@
-package catchroom.dell.audioplayerservice;
+package catchroom.dell.audioplayerservice.Activities;
 
 import android.content.Intent;
 import android.os.Environment;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 import net.rdrei.android.dirchooser.DirectoryChooserActivity;
 import net.rdrei.android.dirchooser.DirectoryChooserConfig;
 
+import catchroom.dell.audioplayerservice.R;
 import catchroom.dell.audioplayerservice.Utils.Constants;
 
 public class MainActivity extends AppCompatActivity {
