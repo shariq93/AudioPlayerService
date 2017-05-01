@@ -31,10 +31,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
             android:layout_marginTop="5dp"
-            android:text="anroid/dkjsd/dkjasdkas/MyFOlder"
+
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/btn_requestDir"
             style="?borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,10 +50,11 @@
     <RelativeLayout
         android:background="@drawable/circular_background_white"
         android:padding="10dp"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/folderContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/folderContainer"
+        android:layout_alignLeft="@+id/folderContainer"
+        android:layout_alignStart="@+id/folderContainer">
 
         <TextView
             android:id="@+id/titile2"
@@ -62,13 +64,60 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/title3"
+            android:gravity="center"
+            android:layout_alignTop="@+id/et_timeInterval"
+            android:layout_alignBottom="@+id/et_timeInterval"
+            android:layout_marginTop="5dp"
             android:textSize="16sp"
             android:layout_below="@+id/titile2"
-            android:text="Time Interval"
+            android:text="File check scheduled in "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@+id/title3"
+            android:id="@+id/et_timeInterval"
+            android:gravity="center"
+            android:text="6"
+            android:inputType="number"
+            android:layout_below="@+id/titile2"
+
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/title4"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/et_timeInterval"
+            android:layout_alignTop="@+id/et_timeInterval"
+            android:layout_alignBottom="@+id/et_timeInterval"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/titile2"
+            android:text="Minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_set_interval"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title4"
+            android:textColor="#FFE67E22"
+            style="?borderlessButtonStyle"
+            android:text="OK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
-
+<Button
+    android:id="@+id/btn_schedule_service"
+    android:textColor="#fff"
+    android:background="#FFE67E22"
+    style="?borderlessButtonStyle"
+    android:text="Schedule Service"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 </RelativeLayout>

@@ -35,6 +35,14 @@ public class UserPrefs {
     get audio file folder setted from activity
      */
     public String getStorageDirectory(){
-        return prefs.getString("dir", Environment.getExternalStorageDirectory() + File.separator + Constants.DEF_FOLDER);
+        return prefs.getString("dir","");
+    }
+
+    public void setInterval(int interval){
+        editor.putInt("interval",interval);
+        editor.commit();
+    }
+    public int getInterval(){
+        return prefs.getInt("interval",5);
     }
 }
